@@ -3,36 +3,36 @@
 #include<math.h>
 void main()
 {
-   long int a[20],i,j,n,temp,c;
+   long int a1[20],i,j,n1,temp,c1;
    long int sum=0;
    clrscr();
    scanf("%ld",&n);
-for(i=0;i<n;i++)
+for(i=0;i<n1;i++)
 {
-  scanf("%d",&a[i]);
+  scanf("%d",&a1[i]);
 }
-for(i=0;i<n;i++)
+for(i=0;i<n1;i++)
 {
- for(j=i+1;j<n;j++)
+ for(j=i+1;j<n1;j++)
  {
-  if(a[j]>a[i])
+  if(a1[j]>a1[i])
  {
-  temp=a[i];
-  a[i]=a[j];
-  a[j]=temp;
+  temp=a1[i];
+  a1[i]=a1[j];
+  a1[j]=temp;
  }
  }
 }
-for(i=0;i<n-1;i++)
+for(i=0;i<n1-1;i++)
 {
-  temp=a[i+1];
-  c=0;
+  temp=a1[i+1];
+  c1=0;
   while(temp!=0)
   {
     temp=temp/10;
-    c++;
+    c1++;
   }
-  sum=(sum*pow(10,c))+a[i+1];
+  sum=(sum*pow(10,c1))+a1[i+1];
 }
 printf("\n%ld",sum);
 getch();
